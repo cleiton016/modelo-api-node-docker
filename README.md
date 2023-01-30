@@ -1,6 +1,6 @@
-# Api_plms.app
+# Model API
 
-API com o intuito de suprir as necessidades de um app para fazer planejamentos mensais de despesas, ajudando então a manter o controle dos gastos e dar estimativas de gastos juturos
+Modelo base para iniciar porjetos utilizando node.js e docker-compose
 
 ### 1º passo
 
