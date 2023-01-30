@@ -38,7 +38,12 @@ Execute o seguinte comando na raiz do projeto.
 * Ambiente de produção
 
   `Yarn start` ou `npm start`
-
+  
+### 4º Passo - Docker-compose
+É necessário ter o [docker](https://www.docker.com/) instalado em sua maquina.
+* Com docker instalado execute o comando abaixo
+  `docker-compose up`
+  
 ### Fim
 
 agora acesse seu [localhost](http://localhost:3000) e #letsCode...
