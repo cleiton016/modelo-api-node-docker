@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: 
+      - '5432:5432'
+    volumes:
+      - base_projeto:/var/lib/postgresql/data
+
+  projeto:
+    build:
+      context: .
+    environment:
+      DB_SCHEMA: projeto
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: postgres
+      DB_PORT: 5432
+    depends_on:
+      - postgres
+    ports:
+      - '3000:3000'
+        
+volumes:
+  base_projeto:
